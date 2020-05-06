@@ -11,12 +11,19 @@
   <div class="container">
     <h1>Random Num Generator</h1>
     <form action="">
-      <label for="">Max Number</label>
-      <input type="number" name="" id="max" onchange="generate()">
-      <label for="">Min Number</label>
-      <input type="number" name="" id="min"  onchange="generate()">
+      <div class="labels">
+        <label for="">Max Number</label>
+        <input type="number" value="" id="max" onchange="generate()">
+      </div>
+      <div class="labels">
+        <label for="">Min Number</label>
+        <input type="number" value="" id="min"  onchange="generate()">
+      </div>
       <button type="button" name="button" onclick="generate()">GENERATE RANDOM NUMBER</button>
-      <input type="number" name="" value="" readonly id="answer">
+      <div class="labels">
+        <label for="">New Num:</label>
+        <input type="number" name="" value="" readonly id="answer">
+      </div>
     </form>
   </div>
 

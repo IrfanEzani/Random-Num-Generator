@@ -5,6 +5,8 @@
 }
 
 body {
+  background: linear-gradient( 145deg,rgb(204, 108, 195), rgb(140, 55, 231));
+  font-family: 'Lato', sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,9 +18,69 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: black;
+  color : white;
+  padding: 1rem;
+  border-radius: 25px;
+  border
+}
+
+.container h1 {
+margin: 10px;
+letter-spacing: -1px;
 }
 
 .container form {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
+}
+
+.labels {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+label {
+font-weight: bold;
+line-height: 20px;
+}
+
+input {
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 20px;
+  margin: 0.5rem 0;
+  padding: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+input:active, input:focus {
+  border : 2px solid rgb(140, 55, 231);
+}
+
+button {
+  margin: 0.5rem 0;
+  padding: 10px;
+  background: none;
+  color : white;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid rgb(204, 108, 195);
+}
+
+button:active, button:hover {
+  background: rgb(204, 108, 195);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#answer {
+  background: none;
+  border : 2px solid white;
+  color : white;
+  font-weight: bold;
 }
