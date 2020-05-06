@@ -12,11 +12,11 @@
     <h1>Random Num Generator</h1>
     <form action="">
       <label for="">Max Number</label>
-      <input type="number" name="" id="max">
+      <input type="number" name="" id="max" onchange="generate()">
       <label for="">Min Number</label>
-      <input type="number" name="" id="min">
-      <button type="button" name="button">GENERATE RANDOM NUMBER</button>
-      <input type="number" name="" value="" readonly>
+      <input type="number" name="" id="min"  onchange="generate()">
+      <button type="button" name="button" onclick="generate()">GENERATE RANDOM NUMBER</button>
+      <input type="number" name="" value="" readonly id="answer">
     </form>
   </div>
 
